@@ -1,0 +1,35 @@
+
+I used this method and connect my device with the React-Native-CLI project.
+
+Remind one Things your phone and Laptop should be on same Internet. 
+
+First, I run the project and install the app on the device through the cable. (Only Once)
+
+1.  Then gave this command in Terminal 
+======>>>>     adb tcpip 1122 ​
+(1122 is the port number .it can be changeable).
+
+3.  Then,Remove the cable.
+
+4.  Set IP Port number in mobile app that we installed. 
+method:-
+>>> Open the Installed App
+>>> Shake the phone
+>>> Menu will appear after shaking phone 
+>>> Go to Setting 
+>>> Go to Debugging Mode 
+>>> Then set port no and Ip address
+
+5. open Project Terminal again
+Gave this command
+>> adb connect 10.27.161.74:1122   
+( 10.27.161.74 is IP address that you can get from your phone settings.>>>About phone>>Status>>IP address).
+(1122 is port number that we set in previous step).
+
+Then Run Project.
+
+6. npx react-native run-android
+
+
+Cheers........ :)
+
